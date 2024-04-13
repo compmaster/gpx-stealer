@@ -1,0 +1,20 @@
+{
+	"manifest_version": 3,
+	"name": "Steal GPX",
+	"description": "Build GPX from every public activity on Strava.",
+	"version": "0.1",
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": "icon.png"
+	},
+	"content_scripts": [
+		{
+			"js": [
+				"content.js"
+			],
+			"matches": [
+				"https://www.strava.com/activities/*"
+			]
+		}
+	]
+}
